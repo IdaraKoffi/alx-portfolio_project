@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="todo-icon.png"To-Do Icon">
+      <h1>My To-Do List</h1>
+    </header>
+
+    <section class="task-input">
+      <input type="text" id="task-input" placeholder="Add a new task...">
+      <input type="date" id="task-date">
+      <button id="add-task-btn">Add</button>
+    </section>
+
+    <section class="filter-options">
+      <label for="filter">View Tasks:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+      </select>
+    </section>
+
+    <ul id="task-list"></ul>
+
+    <footer>
+      <p>© 2025 My To-Do List App</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

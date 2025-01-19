@@ -1,175 +1,104 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  line-height: 1.6;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-/* Main Container */
 .container {
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Header */
-header {
+/* Hero Section */
+.hero {
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #FFC107;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Features Section */
+.features {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+/* Demo Section */
+.demo {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.demo h2 {
+  margin-bottom: 20px;
+}
+
+#app-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
   text-align: center;
   padding: 20px 0;
 }
 
-header h1 {
-  font-size: 2rem;
-  color: #4caf50;
-}
-
-header img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-/* Task Input Section */
-.task-input {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.task-input input[type="text"],
-.task-input input[type="date"] {
-  flex: 1;
-  padding: 10px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.task-input button {
-  background: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.task-input button:hover {
-  background: #45a049;
-}
-
-/* Filter Options */
-.filter-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.filter-options label {
-  font-weight: bold;
-}
-
-.filter-options select {
-  padding: 8px;
-  font-size: 16px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-}
-
-/* Task List */
-#task-list {
-  list-style: none;
-}
-
-#task-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background: #f9f9f9;
-  transition: background 0.3s;
-}
-
-#task-list li:hover {
-  background: #f1f1f1;
-}
-
-#task-list span {
-  flex: 1;
-  margin-left: 10px;
-  font-size: 16px;
-}
-
-#task-list .completed {
-  text-decoration: line-through;
-  color: #999;
-}
-
-/* Buttons in Task List */
-#task-list button {
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-#task-list .complete-task {
-  background: #4caf50;
-  color: white;
-}
-
-#task-list .complete-task:hover {
-  background: #45a049;
-}
-
-#task-list .delete-task {
-  background: #f44336;
-  color: white;
-}
-
-#task-list .delete-task:hover {
-  background: #e53935;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #777;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background: url(background.jpg) center center/cover;
-  background-size: cover;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+.footer a {
+  color: #FFC107;
+  text-decoration: none;
 }

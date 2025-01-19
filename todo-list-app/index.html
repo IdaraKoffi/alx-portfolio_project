@@ -7,35 +7,69 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="todo-icon.png"To-Do Icon">
-      <h1>My To-Do List</h1>
-    </header>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Stay Organized with To-Do List</h1>
+      <p>Manage your tasks effortlessly and boost your productivity.</p>
+      <a href="#demo" class="cta-button">Try it Now</a>
+    </div>
+  </header>
 
-    <section class="task-input">
-      <input type="text" id="task-input" placeholder="Add a new task...">
-      <input type="date" id="task-date">
-      <button id="add-task-btn">Add</button>
-    </section>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>Task Management</h3>
+          <p>Add, edit, and delete tasks with ease.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Drag-and-Drop</h3>
+          <p>Reorganize tasks effortlessly.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Local Storage</h3>
+          <p>Your tasks are saved automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="filter-options">
-      <label for="filter">View Tasks:</label>
-      <select id="filter">
-        <option value="all">All</option>
-        <option value="daily">Daily</option>
-        <option value="weekly">Weekly</option>
-        <option value="monthly">Monthly</option>
-      </select>
-    </section>
+  <section id="demo" class="demo">
+    <div class="container">
+      <h2>Try the App</h2>
+      <div id="app-container">
+        <div class="task-manager">
+          <div class="task-inputs">
+            <input type="text" id="task-input" placeholder="Enter a task">
+            <input type="date" id="task-date">
+            <button id="add-task-btn">Add Task</button>
+          </div>
+          <div class="task-filters">
+            <label for="filter">Filter Tasks:</label>
+            <select id="filter">
+              <option value="all">All</option>
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </div>
+          <ul id="task-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 To-Do List App. All rights reserved.</p>
+      <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
+    </div>
+  </footer>
 
-    <ul id="task-list"></ul>
-
-    <footer>
-      <p>© 2025 My To-Do List App</p>
-    </footer>
-  </div>
-
-  <script src="scripts.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
